@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Test" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Linux_Debug">
+				<Option output="bin/linux/Debug/Test_linuxd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/linux/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+				</Compiler>
+			</Target>
+			<Target title="Linux_Release">
+				<Option output="bin/linux/Release/Test_linux" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/linux/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DNDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="`sdl2-config --cflags`" />
+			<Add option="-D_LINUX" />
+			<Add directory="../../Lib/lib" />
+			<Add directory="../../Lib/dfc" />
+			<Add directory="../../Lib/helper" />
+		</Compiler>
+		<Linker>
+			<Add option="`sdl2-config --libs`" />
+		</Linker>
+		<Unit filename="../../Lib/dfc/dfc.h" />
+		<Unit filename="../../Lib/dfc/dfc3DEntity.cpp" />
+		<Unit filename="../../Lib/dfc/dfc3DEntity.h" />
+		<Unit filename="../../Lib/dfc/dfc3DMaze.cpp" />
+		<Unit filename="../../Lib/dfc/dfc3DMaze.h" />
+		<Unit filename="../../Lib/dfc/dfc3DSprite.cpp" />
+		<Unit filename="../../Lib/dfc/dfc3DSprite.h" />
+		<Unit filename="../../Lib/dfc/dfcApp.cpp" />
+		<Unit filename="../../Lib/dfc/dfcApp.h" />
+		<Unit filename="../../Lib/dfc/dfcBackground.cpp" />
+		<Unit filename="../../Lib/dfc/dfcBackground.h" />
+		<Unit filename="../../Lib/dfc/dfcButton.cpp" />
+		<Unit filename="../../Lib/dfc/dfcButton.h" />
+		<Unit filename="../../Lib/dfc/dfcCamera.cpp" />
+		<Unit filename="../../Lib/dfc/dfcCamera.h" />
+		<Unit filename="../../Lib/dfc/dfcContext.cpp" />
+		<Unit filename="../../Lib/dfc/dfcContext.h" />
+		<Unit filename="../../Lib/dfc/dfcDictionary.cpp" />
+		<Unit filename="../../Lib/dfc/dfcDictionary.h" />
+		<Unit filename="../../Lib/dfc/dfcEntity.cpp" />
+		<Unit filename="../../Lib/dfc/dfcEntity.h" />
+		<Unit filename="../../Lib/dfc/dfcFont.cpp" />
+		<Unit filename="../../Lib/dfc/dfcFont.h" />
+		<Unit filename="../../Lib/dfc/dfcLabel.cpp" />
+		<Unit filename="../../Lib/dfc/dfcLabel.h" />
+		<Unit filename="../../Lib/dfc/dfcMusic.cpp" />
+		<Unit filename="../../Lib/dfc/dfcMusic.h" />
+		<Unit filename="../../Lib/dfc/dfcObj.cpp" />
+		<Unit filename="../../Lib/dfc/dfcObj.h" />
+		<Unit filename="../../Lib/dfc/dfcPhysObj.cpp" />
+		<Unit filename="../../Lib/dfc/dfcPhysObj.h" />
+		<Unit filename="../../Lib/dfc/dfcRPGEngine.cpp" />
+		<Unit filename="../../Lib/dfc/dfcRPGEngine.h" />
+		<Unit filename="../../Lib/dfc/dfcRPGEngineEntities.cpp" />
+		<Unit filename="../../Lib/dfc/dfcRPGEngineEntities.h" />
+		<Unit filename="../../Lib/dfc/dfcRPGEngineItems.cpp" />
+		<Unit filename="../../Lib/dfc/dfcRPGEngineItems.h" />
+		<Unit filename="../../Lib/dfc/dfcRPGEngineSpells.cpp" />
+		<Unit filename="../../Lib/dfc/dfcRPGEngineSpells.h" />
+		<Unit filename="../../Lib/dfc/dfcSceneEngine.cpp" />
+		<Unit filename="../../Lib/dfc/dfcSceneEngine.h" />
+		<Unit filename="../../Lib/dfc/dfcSceneNodes.cpp" />
+		<Unit filename="../../Lib/dfc/dfcSceneNodes.h" />
+		<Unit filename="../../Lib/dfc/dfcSound.cpp" />
+		<Unit filename="../../Lib/dfc/dfcSound.h" />
+		<Unit filename="../../Lib/helper/DString.cpp" />
+		<Unit filename="../../Lib/helper/DString.h" />
+		<Unit filename="../../Lib/helper/XMLLoader.cpp" />
+		<Unit filename="../../Lib/helper/XMLLoader.h" />
+		<Unit filename="../../Lib/lib/lib.h" />
+		<Unit filename="../../Lib/lib/libMacros.h" />
+		<Unit filename="../../Lib/lib/libMath.cpp" />
+		<Unit filename="../../Lib/lib/libMath.h" />
+		<Unit filename="../../Lib/lib/libMng3D.h" />
+		<Unit filename="../../Lib/lib/libMngGraphic.h" />
+		<Unit filename="../../Lib/lib/libMngIO.cpp" />
+		<Unit filename="../../Lib/lib/libMngIO.h" />
+		<Unit filename="../../Lib/lib/libMngInput.h" />
+		<Unit filename="../../Lib/lib/libMngResIO.cpp" />
+		<Unit filename="../../Lib/lib/libMngResIO.h" />
+		<Unit filename="../../Lib/lib/libMngSound.h" />
+		<Unit filename="../../Lib/lib/libTypes.h" />
+		<Unit filename="../../Lib/lib/linux/libMacros_linux.h" />
+		<Unit filename="../../Lib/lib/linux/libMng3D_linux.cpp" />
+		<Unit filename="../../Lib/lib/linux/libMng3D_linux.h" />
+		<Unit filename="../../Lib/lib/linux/libMngGraphic_linux.cpp" />
+		<Unit filename="../../Lib/lib/linux/libMngGraphic_linux.h" />
+		<Unit filename="../../Lib/lib/linux/libMngInput_linux.cpp" />
+		<Unit filename="../../Lib/lib/linux/libMngInput_linux.h" />
+		<Unit filename="../../Lib/lib/linux/libMngSound_linux.cpp" />
+		<Unit filename="../../Lib/lib/linux/libMngSound_linux.h" />
+		<Unit filename="../../Lib/lib/linux/libSystem_linux.cpp" />
+		<Unit filename="../../Lib/lib/linux/libTypes_linux.h" />
+		<Unit filename="../../Lib/lib/linux/lib_linux.h" />
+		<Unit filename="AppTest.cpp" />
+		<Unit filename="AppTest.h" />
+		<Unit filename="CtxToto.cpp" />
+		<Unit filename="CtxToto.h" />
+		<Unit filename="game.h" />
+		<Unit filename="resScript/BkTest.background" />
+		<Unit filename="resScript/CollisionWalls.sound" />
+		<Unit filename="resScript/CtxTest.context" />
+		<Unit filename="resScript/DicTest.dictionary" />
+		<Unit filename="resScript/Font8.font" />
+		<Unit filename="resScript/Hero.entity" />
+		<Unit filename="resScript/Hero3D.3dentity" />
+		<Unit filename="resScript/Music1.sound" />
+		<Unit filename="resScript/gp2x/AppTest.application" />
+		<Unit filename="resScript/gp2x/BkToto.background" />
+		<Unit filename="resScript/lblTest.label" />
+		<Unit filename="resScript/linux/AppTest.application" />
+		<Unit filename="resScript/linux/BkToto.background" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

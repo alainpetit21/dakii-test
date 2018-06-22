@@ -1,0 +1,23 @@
+<BACKGROUND>
+	<NB_LAYERS>4</NB_LAYERS>
+	<LAYER>
+		<FILENAME>BG_Village_Darkness_0.tga</FILENAME>
+		<ON>1</ON>
+		<POS_Z>400</POS_Z>
+	</LAYER>
+	<LAYER>
+		<FILENAME>BG_Village_Darkness_1.tga</FILENAME>
+		<ON>1</ON>
+		<POS_Z>300</POS_Z>
+	</LAYER>
+	<LAYER>
+		<FILENAME>BG_Village_Darkness_2.tga</FILENAME>
+		<ON>1</ON>
+		<POS_Z>200</POS_Z>
+	</LAYER>
+	<LAYER>
+		<FILENAME>BG_Village_Darkness_3.tga</FILENAME>
+		<ON>1</ON>
+		<POS_Z>100</POS_Z>
+	</LAYER>
+</BACKGROUND>

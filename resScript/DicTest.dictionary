@@ -1,0 +1,22 @@
+<DICTIONARY>
+	<NB_LANGUAGES>2</NB_LANGUAGES>
+	<NB_ENTRY>1</NB_ENTRY>
+
+	<LANGUAGE>
+		<NAME>English</NAME>
+
+		<ENTRY>
+			<MAP>RemiSansFamille</MAP>
+			<TXT>Hi my name is Remi and I am homeless</TXT>
+		</ENTRY>
+	</LANGUAGE>
+
+	<LANGUAGE>
+		<NAME>Francais</NAME>
+
+		<ENTRY>
+			<MAP>RemiSansFamille</MAP>
+			<TXT>Bonjour je mappelle Remi et je suis sans famille</TXT>
+		</ENTRY>
+	</LANGUAGE>
+</DICTIONARY>
