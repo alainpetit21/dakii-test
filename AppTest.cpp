@@ -35,4 +35,11 @@ newGameApp(void)
 }
 
 
-ENTRY_POINT("Test");
+//ENTRY_POINT("Test");
+extern int LibMain(const char *p_strGame);
+int
+main(int argc, char* argvp[])
+{
+	g_TheApp= newGameApp();
+	return LibMain("Test");
+}
