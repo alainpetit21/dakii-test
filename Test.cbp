@@ -43,6 +43,7 @@
 		<Linker>
 			<Add option="`sdl2-config --libs`" />
 			<Add library="libSDL2_image" />
+			<Add library="libSDL2_mixer" />
 			<Add directory="/usr/lib64" />
 		</Linker>
 		<Unit filename="../../dakiilib/dfc/dfc.h" />

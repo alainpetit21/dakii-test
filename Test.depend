@@ -2058,22 +2058,25 @@
 	"./gp2x/libMngSound_gp2x.h"
 	"./linux/libMngSound_linux.h"
 
-1529719803 /home/apetit/Work/Dakiisoft/Code/dakiilib/lib/linux/libMngSound_linux.h
+1529843517 /home/apetit/Work/Dakiisoft/Code/dakiilib/lib/linux/libMngSound_linux.h
+	<SDL_audio.h>
+	<SDL_mixer.h>
 
-1529719803 /home/apetit/Work/Dakiisoft/Code/dakiilib/dfc/dfcSound.h
+1529846443 /home/apetit/Work/Dakiisoft/Code/dakiilib/dfc/dfcSound.h
 	<tremor/ogg.h>
 	<tremor/ivorbisfile.h>
 	"dfcPhysObj.h"
 
-1529719803 /home/apetit/Work/Dakiisoft/Code/dakiilib/dfc/dfcMusic.h
+1529846367 /home/apetit/Work/Dakiisoft/Code/dakiilib/dfc/dfcMusic.h
 	<SDL.h>
+	<SDL_mixer.h>
 	"dfcSound.h"
 
 1529719803 /home/apetit/Work/Dakiisoft/Code/dakiilib/dfc/dfcSceneEngine.h
 	"DString.h"
 	"XMLLoader.h"
 
-1529719803 /home/apetit/Work/Dakiisoft/Code/dakiilib/dfc/dfcLabel.h
+1529840872 /home/apetit/Work/Dakiisoft/Code/dakiilib/dfc/dfcLabel.h
 	"dfcPhysObj.h"
 	"dfcFont.h"
 
@@ -2111,7 +2114,7 @@
 	"dfcFont.h"
 	"libMngResIO.h"
 
-1529719803 source:/home/apetit/Work/Dakiisoft/Code/dakiilib/dfc/dfcLabel.cpp
+1529840910 source:/home/apetit/Work/Dakiisoft/Code/dakiilib/dfc/dfcLabel.cpp
 	<stdio.h>
 	<stdlib.h>
 	<stdarg.h>
@@ -2124,7 +2127,7 @@
 	"dfcCamera.h"
 	"dfcDictionary.h"
 
-1529719803 source:/home/apetit/Work/Dakiisoft/Code/dakiilib/dfc/dfcMusic.cpp
+1529846251 source:/home/apetit/Work/Dakiisoft/Code/dakiilib/dfc/dfcMusic.cpp
 	"lib.h"
 	"libMacros.h"
 	"libMngSound.h"
@@ -2208,7 +2211,7 @@
 	"dfcApp.h"
 	"dfcDictionary.h"
 
-1529719803 source:/home/apetit/Work/Dakiisoft/Code/dakiilib/dfc/dfcSound.cpp
+1529846291 source:/home/apetit/Work/Dakiisoft/Code/dakiilib/dfc/dfcSound.cpp
 	"lib.h"
 	"libMacros.h"
 	"libMngSound.h"
@@ -2221,13 +2224,13 @@
 	"lib.h"
 	"libMacros.h"
 
-1529719803 source:/home/apetit/Work/Dakiisoft/Code/dakiilib/helper/XMLLoader.cpp
+1529843127 source:/home/apetit/Work/Dakiisoft/Code/dakiilib/helper/XMLLoader.cpp
 	"lib.h"
 	"libMacros.h"
 	"XMLLoader.h"
 	"DString.h"
 
-1529836816 source:/home/apetit/Work/Dakiisoft/Code/dakiilib/lib/libMath.cpp
+1529847625 source:/home/apetit/Work/Dakiisoft/Code/dakiilib/lib/libMath.cpp
 	"libMath.h"
 
 1529836864 source:/home/apetit/Work/Dakiisoft/Code/dakiilib/lib/libMngIO.cpp
@@ -2235,10 +2238,7 @@
 	"libMngIO.h"
 	"libMacros.h"
 
-1529837064 source:/home/apetit/Work/Dakiisoft/Code/dakiilib/lib/libMngResIO.cpp
-	<tremor/ogg.h>
-	<tremor/ivorbisfile.h>
-	<tremor/ivorbiscodec.h>
+1529847625 source:/home/apetit/Work/Dakiisoft/Code/dakiilib/lib/libMngResIO.cpp
 	<SDL_image.h>
 	"lib.h"
 	"libMacros.h"
@@ -2253,7 +2253,7 @@
 	"libMng3D.h"
 	"libMngGraphic.h"
 
-1529836184 source:/home/apetit/Work/Dakiisoft/Code/dakiilib/lib/linux/libMngGraphic_linux.cpp
+1529842720 source:/home/apetit/Work/Dakiisoft/Code/dakiilib/lib/linux/libMngGraphic_linux.cpp
 	"lib.h"
 	"libMacros.h"
 	"libMngGraphic.h"
@@ -2269,7 +2269,7 @@
 	"libMngInput.h"
 	"libMngGraphic.h"
 
-1529836675 source:/home/apetit/Work/Dakiisoft/Code/dakiilib/lib/linux/libMngSound_linux.cpp
+1529845677 source:/home/apetit/Work/Dakiisoft/Code/dakiilib/lib/linux/libMngSound_linux.cpp
 	<SDL.h>
 	"lib.h"
 	"libTypes.h"
@@ -2278,7 +2278,7 @@
 	"libMngInput.h"
 	"dfcMusic.h"
 
-1529836790 source:/home/apetit/Work/Dakiisoft/Code/dakiilib/lib/linux/libSystem_linux.cpp
+1529847625 source:/home/apetit/Work/Dakiisoft/Code/dakiilib/lib/linux/libSystem_linux.cpp
 	"lib.h"
 	"libTypes.h"
 	"libMacros.h"
@@ -2290,7 +2290,7 @@
 	"libMngSound.h"
 	"dfcApp.h"
 
-1529722075 source:/home/apetit/Work/Dakiisoft/Code/Games/dakii-test/AppTest.cpp
+1529838522 source:/home/apetit/Work/Dakiisoft/Code/Games/dakii-test/AppTest.cpp
 	"lib.h"
 	"libTypes.h"
 	"libMacros.h"
@@ -2682,6 +2682,15 @@
 
 1519932786 /usr/include/SDL2/SDL_image.h
 	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508772699 /usr/include/SDL2/SDL_mixer.h
+	"SDL_stdinc.h"
+	"SDL_rwops.h"
+	"SDL_audio.h"
+	"SDL_endian.h"
 	"SDL_version.h"
 	"begin_code.h"
 	"close_code.h"
