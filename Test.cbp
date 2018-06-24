@@ -38,10 +38,12 @@
 			<Add directory="../../dakiilib/lib" />
 			<Add directory="../../dakiilib/dfc" />
 			<Add directory="../../dakiilib/helper" />
-			<Add directory="/usr/local/include/SDL2" />
+			<Add directory="/usr/include/SDL2" />
 		</Compiler>
 		<Linker>
 			<Add option="`sdl2-config --libs`" />
+			<Add library="libSDL2_image" />
+			<Add directory="/usr/lib64" />
 		</Linker>
 		<Unit filename="../../dakiilib/dfc/dfc.h" />
 		<Unit filename="../../dakiilib/dfc/dfc3DEntity.cpp" />

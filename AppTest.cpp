@@ -5,9 +5,6 @@
 
 #include "CtxToto.h"
 
-//#include "SYSTRAY.H"
-//#include "DLLHOOK.H"
-//#include <process.h>
 
 CAppTest	*g_TheAppTest;
 
@@ -35,11 +32,4 @@ newGameApp(void)
 }
 
 
-//ENTRY_POINT("Test");
-extern int LibMain(const char *p_strGame);
-int
-main(int argc, char* argvp[])
-{
-	g_TheApp= newGameApp();
-	return LibMain("Test");
-}
+ENTRY_POINT("Test");
