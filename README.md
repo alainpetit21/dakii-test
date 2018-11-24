@@ -1,5 +1,5 @@
 TODO
- - Remake of Arcana for the SNES, at least the Scenaric part of the Intro
+ - Test project to test from algorithms
 
 
 HOW TO COMPILE
@@ -42,6 +42,3 @@ HOW TO COMPILE
   - - Under File.ProjectProperties(Arcana).Linker.CompilationLine.AdditionalOptions
     `sdl2-config --libs`    
 
-
-TODO
-- fix crash bugs in gradual labels
